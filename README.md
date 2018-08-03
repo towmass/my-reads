@@ -8,8 +8,6 @@ Student's goal for this project was to successfully implement obtained informati
 
 This web application was built by using HTML, CSS, Javascript (+ React), whereas Udacity provided the starter template to work with including their course lessons for required topics.
 
-Please note that once the page is refreshed, the current content of shelves will appear again after searching and manipulating with some book - this indicates that the app should be used when the reader experiences some new "state" with the given book or books and want to record it to his personal database.
-
 ## Table of Contents
 
 - [How To Install](#how_to_install)

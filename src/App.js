@@ -17,7 +17,7 @@ class BooksApp extends React.Component {
   componentDidMount() {
     BooksAPI.getAll().then(res => {
       // res and data comes from BooksAPI.js
-      this.setState({ data: res });
+      this.setState({ books: res });
     });
   }
 
@@ -57,9 +57,9 @@ class BooksApp extends React.Component {
   }
 
   // Update the list of readings
-  newDetails(bookID, event) {
-    let testtest = BooksAPI.update(bookID, event.target.value);
-    testtest.then(
+  newDetails(bookId, e) {
+    let bookChange = BooksAPI.update(bookId, e.target.value);
+    bookChange.then(
       BooksAPI.getAll().then(books => {
         this.setState({ books: books });
       })
